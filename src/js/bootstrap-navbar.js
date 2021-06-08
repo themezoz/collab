@@ -47,15 +47,15 @@ const navbarInit = () =>{
     const colorRgb = utils.hexToRgb(color);
     const { backgroundImage } = window.getComputedStyle(navbar);
     const transition = 'background-color 0.35s ease';
-    navbar.style.backgroundImage = 'navbar-klean';
+    navbar.style.backgroundImage = 'none';
 
      // Change navbar background color on scroll
      window.addEventListener(Events.SCROLL, () => {
       const { scrollTop } = html;
-      let alpha = (scrollTop / windowHeight) * .5;
+      let alpha = (scrollTop / windowHeight) * 2;
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = `rgba(${colorRgb[0]}, ${colorRgb[1]}, ${colorRgb[2]}, ${alpha})`;
-      navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'navbar-klean';
+      navbar.style.backgroundImage = (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? backgroundImage : 'none';
       (alpha > 0 || utils.hasClass(navbarCollapse, 'show')) ? navbar.classList.add(shadowName):navbar.classList.remove(shadowName);
     });
 
