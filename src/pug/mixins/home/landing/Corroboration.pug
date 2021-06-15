@@ -4,6 +4,8 @@ append variables
       {
         image:'corroboration.png',
         order: 'order-0 order-md-1',
+        imgPosition:'text-md-end',
+        offset:'offset-1',
         preTitle:'corroboration',
         title:'Keeping All Elements Together To Present The Project',
         text:'While the project is shared between several members, the resources need to be at one place to maintain the clarity of the project, and flexibility among developers.'
@@ -14,24 +16,21 @@ append variables
   -
     var Cfeatures = [
       { 
-        icon:'fas fa-video',
+        icon:'video.svg',
         iconBg:'bg-white',
-        iconColor:'text-warning',
-        title:'Write it up',
+        title:'Video conferencing',
         text:`<span class="text-900">Communicating through video on elaborate workflow and understanding.</span>`
       },
       {
-        icon:'far fa-comment-dots',
+        icon:'chat.svg',
         iconBg:'bg-white',
-        iconColor:'text-warning',
-        title:'Show to others menu',
+        title:'Talk with mates',
         text:'<span class="text-900">Stay communicated with all the colleagues and brush up your social skill.</span>'
       },
       {
-        icon:'far fa-image',
+        icon:'image.svg',
         iconBg:'bg-white',
-        iconColor:'text-warning',
-        title:'Storing at the cloud',
+        title:'High quality image sharing',
         text:'<span class="text-900">Click it and share the top quality images to all the member of your group.</span>'
       },
 
@@ -40,8 +39,8 @@ append variables
 
 mixin Corroboration 
   +Section.py-6(style="background:linear-gradient(180deg, #FFFEFC -54.51%, #FFF8F0 99.98%);")
-    .row.align-items-center
+    .row.flex-center
       +PartnershipCorroboration(corroboration[0])
-    .row
+    .row.flex-center
       each item in Cfeatures
         +Feature(item)  

@@ -33,7 +33,7 @@ mixin Faq(config, index)
       button.accordion-button.px-2(type='button' data-bs-toggle='collapse'  class=index == 0 ? false : 'collapsed'  data-bs-target=`#collapse${config.id}` aria-expanded='true' aria-controls=`collapse${config.id}`)
         span.mb-0.fw-bold.text-start.fs-1.text-1000=config.title
     .accordion-collapse.collapse(id=`collapse${config.id}` class=index == 0 ? 'show' : false  aria-labelledby=`heading${config.id}`  data-bs-parent='#accordionExample')
-      .accordion-body.ps-sm-9.pt-0=config.description
+      .accordion-body.pt-0.px-2=config.description
         
 mixin Faqs
   +Section.pb-md-10#faq

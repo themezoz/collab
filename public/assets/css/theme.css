@@ -7603,8 +7603,8 @@ fieldset:disabled .btn {
 }
 
 .shadow-lg {
-  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175) !important;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-box-shadow: 0 1rem 4rem rgba(80, 34, 226, 0.1) !important;
+  box-shadow: 0 1rem 4rem rgba(80, 34, 226, 0.1) !important;
 }
 
 .shadow-none {

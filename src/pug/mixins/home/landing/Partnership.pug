@@ -3,6 +3,8 @@ append variables
     var partnership = [
       {
         image:'partnership.png',
+        imgPosition:'text-md-start offset-1',
+        offset:'offset-0',
         preTitle:'partnership',
         order: 'order-0',
         title:'Build strong partnership & organizations',
@@ -14,23 +16,20 @@ append variables
   -
     var Pfeatures = [
       { 
-        icon:'far fa-edit',
+        icon:'edit.svg',
         iconBg:'bg-soft-danger',
-        iconColor:'text-danger',
         title:'Write it up',
         text:'Write it down whenever you feel for it, as each details matter and stay.'
       },
       {
-        icon:'fas fa-tv',
+        icon:'monitor.svg',
         iconBg:'bg-soft-danger',
-        iconColor:'text-danger',
         title:'Show to others menu',
         text:'Share effective and important data to your partner.'
       },
       {
-        icon:'fas fa-cloud',
+        icon:'cloud.svg',
         iconBg:'bg-soft-danger',
-        iconColor:'text-danger',
         title:'Storing at the cloud',
         text:'Save your valuable info to get all the resources under one platform as a unit.'
       },
@@ -39,8 +38,8 @@ append variables
 
 mixin Partnership 
   +Section.py-6 
-    .row.align-items-center
+    .row.flex-center
       +PartnershipCorroboration(partnership[0])
-    .row
+    .row.flex-center
       each item in Pfeatures
         +Feature(item)  
