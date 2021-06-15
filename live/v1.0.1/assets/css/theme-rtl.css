@@ -17573,6 +17573,11 @@ ul {
   }
 }
 
+.shadow-collab {
+  -webkit-box-shadow: 0 1rem 4rem rgba(254, 154, 82, 0.3) !important;
+  box-shadow: 0 1rem 4rem rgba(254, 154, 82, 0.3) !important;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Borders                                  */
 /* -------------------------------------------------------------------------- */
@@ -18034,6 +18039,11 @@ ul {
 
 .icon-dark {
   color: #353738;
+}
+
+.shadow-collab {
+  -webkit-box-shadow: 0 1rem 4rem rgba(254, 154, 82, 0.25) !important;
+  box-shadow: 0 1rem 4rem rgba(254, 154, 82, 0.25) !important;
 }
 
 /*-----------------------------------------------
